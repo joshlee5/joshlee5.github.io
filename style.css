@@ -1,0 +1,75 @@
+body {
+	font-size: 30px;
+    display: flex;
+    flex-direction: column;
+	min-height: 100vh;
+	margin: 0px;
+	background-image: linear-gradient(#C7D4EB, white);   
+}
+h1 {
+	text-align: center;
+	font-size: 48px;
+}
+h2 {
+	text-align: center;
+	font-size: 30px;
+}
+.navbar {
+	border: 2px solid black; 
+    padding: 10px;          
+    width: fit-content;     
+    margin: 0 auto;
+	background-color: black;
+}
+.navbar ul {
+	list-style-type: none;
+	background-color: black;
+	padding: 0px;
+	margin: 0px;
+	font-size: 48px;
+}
+.navbar a {
+	color: white;
+	text-decoration: none;
+	padding: 15px;
+	display: block;
+	text-align: center;
+}
+.navbar a:hover {
+	background-color: purple;
+}
+.navbar li {
+	float: left;
+}
+#bannerimage {
+	width: 100%;
+	background-image: url();
+	height: 405px;
+	background-color: purple;
+	background-position: center;
+}
+.SuitPhoto {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+.FantasyLeagueTrophy {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+.Bonfire {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+.ImperialSymbol {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+.BookPic {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
