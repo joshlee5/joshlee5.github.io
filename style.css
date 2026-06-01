@@ -25,19 +25,22 @@ body {
     color: var(--text);
     min-height: 100vh;
     background: linear-gradient(to bottom, #eaf1fb 0%, #ffffff 45%);
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 /* Shared layout */
 main,
 .site-header,
 .site-footer {
-    width: min(var(--max-width), 92%);
+    width: 100%;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 main {
-    padding-top: 1rem;
-    padding-bottom: 4rem;
+    padding-top: 1.5rem;
+    padding-bottom: 6rem;
 }
 
 section {
@@ -276,13 +279,20 @@ p {
     font-size: 1.1rem;
 }
 
+.hero-text,
+.about-preview,
+.project-card p,
+.skill-card p {
+    max-width: 70ch;
+}
+
 /* Footer */
 .site-footer {
     text-align: center;
-    padding: 2rem 0 3rem;
+    padding: 3rem 0 3.5rem;
     color: var(--muted);
     border-top: 1px solid var(--border);
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 .site-footer p {
@@ -329,5 +339,12 @@ p {
     .navbar ul {
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 }
