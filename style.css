@@ -1,75 +1,104 @@
+/* Base reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg: #f7f8fc;
+    --surface: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
+    --border: #dbe2ea;
+    --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    --radius: 14px;
+}
+
 body {
-	font-size: 30px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text);
     display: flex;
     flex-direction: column;
-	min-height: 100vh;
-	margin: 0px;
-	background-image: linear-gradient(#C7D4EB, white);   
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #eaf1fb 0%, #ffffff 45%);
 }
+
+/* Headings */
 h1 {
-	text-align: center;
-	font-size: 48px;
+    text-align: center;
+    font-size: 3rem; /* 48px */
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
 }
+
 h2 {
-	text-align: center;
-	font-size: 30px;
+    text-align: center;
+    font-size: 1.75rem; /* 28px */
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text);
 }
+
+/* Navigation */
 .navbar {
-	border: 2px solid black; 
-    padding: 10px;          
-    width: fit-content;     
-    margin: 0 auto;
-	background-color: black;
+    width: fit-content;
+    margin: 1.5rem auto;
+    background-color: rgba(255, 255, 255, 0.92);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    box-shadow: var(--shadow);
+    padding: 0.4rem;
 }
+
 .navbar ul {
-	list-style-type: none;
-	background-color: black;
-	padding: 0px;
-	margin: 0px;
-	font-size: 48px;
+    list-style: none;
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
 }
-.navbar a {
-	color: white;
-	text-decoration: none;
-	padding: 15px;
-	display: block;
-	text-align: center;
-}
-.navbar a:hover {
-	background-color: purple;
-}
+
 .navbar li {
-	float: left;
+    float: none;
 }
+
+.navbar a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.8rem 1.1rem;
+    display: block;
+    border-radius: 999px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navbar a:hover {
+    background-color: var(--accent);
+    color: white;
+}
+
+/* Banner */
 #bannerimage {
-	width: 100%;
-	background-image: url();
-	height: 405px;
-	background-color: purple;
-	background-position: center;
+    width: 100%;
+    height: 320px;
+    background-color: #c7d4eb;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0 0 24px 24px;
+    margin-bottom: 2rem;
 }
-.SuitPhoto {
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-}
-.FantasyLeagueTrophy {
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-}
-.Bonfire {
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-}
-.ImperialSymbol {
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-}
-.BookPic {
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
+
+/* Reusable image class */
+.content-image {
+    display: block;
+    width: min(500px, 90%);
+    margin: 2rem auto;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
 }

@@ -11,54 +11,89 @@
 <body>
     <div id="bannerimage"></div>
 
-    <nav class="navbar" >
+    <nav class="navbar">
+        <a href="index.html" class="logo">Joshua Lee</a>
         <ul>
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Projects.html">Projects</a></li>
-            <li><a href="Contacts.html">Contacts</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="assets/Joshua_M_Lee_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
         </ul>
     </nav>
 
-    <h1>Projects</h1>
+    <h1>ExpenSense</h1>
     <div>
-        <h2>LetterBooksd</h2>
-        <class="BookPic">
-            <img src="Assets/BookPic.png"
-                width="300" height="300">
+        <h2>Description</h2>
         <p>
-            An IOS app for reviewing books similar to how Letterboxd is for reviewing movies.
+                ExpenSense (“the agent makes sense of your expenses intelligently”) is a multi-agent enterprise 
+            expense management platform designed to streamline and automate the entire reimbursement lifecycle. 
+            The system integrates traditional backend services with specialized AI agents to provide accurate, 
+            policy-compliant, and auditable expense processing at scale. At its core, ExpenSense replaces manual 
+            review and inconsistent human decision-making with a coordinated network of AI-powered components, each 
+            responsible for a distinct part of the workflow. The architecture incorporates an Expense Agent, Document Agent, 
+            Email Agent, and an Orchestrator Agent, all working together to parse receipts, validate policy compliance, detect 
+            anomalies, and determine reimbursement outcomes.
+
+                The system is built with a layered architecture that separates presentation, business logic, agent reasoning, 
+            and data access. Users interact with a modern web interface for submitting expenses, querying policy information, 
+            viewing submission history, and managing their account and financial details. Authentication and authorization are 
+            enforced before any user gains access to sensitive operations, ensuring compliance with enterprise security standards.
+            ExpenSense enforces a comprehensive reimbursement policy through a combination of rules-based logic and semantic reasoning. 
+            Automated approval, frequency violation detection, document validation, and large-amount flagging are implemented through 
+            the Expense Agent, enabling the system to handle routine submissions instantly while routing higher-risk requests to human administrators. 
+            By combining agent-based intelligence, robust backend infrastructure, and clear policy enforcement, delivers a scalable, secure, 
+            and accountable reimbursement workflow suitable for enterprise environments. The result is a system that not only reduces 
+            operational overhead and speeds up approval times but also significantly improves consistency, fairness, and policy 
+            alignment across all submitted expenses.
+
+                Since the API credits necessary for the ExpenSense Agent to run costs money, it is currently disabled. The code for the 
+            agent is available at my github repository. It, along with the README, gives insight into how the agent was built and how it 
+            functions.
+
+            Github Link:  https://github.com/joshlee5/ExpenSense-AI-Project
+        </p>
+        <div>
+            <h2>System Architecture Diagram</h2>
+            <img src="assets/expensense_system_architecture.png" alt="System Architecture">
+        </div>
+    </div>
+
+    <h1>Saphire SAT Practice App</h1>
+    <div>
+        <h2>Description</h2>
+        <p>
+                Saphire SAT Practice App is a web and mobile application that offers students convenient SAT practice that can be 
+            done anytime, anywhere! It provides a variety of study modes, such as timed, to answer multiple-choice questions in reading or math.
+            Instantaneous feedback is offered to the user upon getting a question wrong, and their history is stored in our database so that the 
+            app can see where they are at in each subject and recommend different areas of focus in their study habits. 
+
+                The app is built in Flutter using the Dart package to create accessibility on all platforms. It utilizes Google Firestore to store 
+            not only user information but also their question and answer history. This allows the app to adapt to their subject knowledge and make 
+            recommendations to users on how to best use their time to prepare for the SAT. 
+            
+            The current app is in its MVP phase so not all study modes and question adaptibility has been implemented.
+
+            Github Link: https://github.com/joshlee5/Saphire-SAT-Practice-App
+        </p>
+        <div>
+            <h2>Class Diagram</h2>
+            <img src="assets/saphire_class_diagram.jpg" alt="Class Diagram">
+        </div>
+    </div>
+
+    <h1>LetterBooksd</h1>
+    <div>
+        <h2>Description</h2>
+        <p>
+                An IOS app for reviewing books similar to how Letterboxd is for reviewing movies.
             It utilizes a Google Firebase to store Google Books API data of the descriptions 
             of various books that users can search up. They can leave reviews for these books
             and users can comment on reviews as well.
 
             Github Link: https://github.com/joshlee5/LetterBooksd.git
         </p>
-
-        <h2>Firebased Blog</h2>
-        <class="Bonfire">
-            <img src="Assets/Bonfire.jpeg"
-                width="300" height="300">
-        <p>
-            A blogging app allowing users to post their thoughts on accounts with email authentication.
-            Both a web application and an IOS mobile app. Users can post and comment on others' posts 
-            as well as search for posts.
-
-            Github Link for web app: https://github.com/joshlee5/Firebased-Blog.git
-
-            Github Link for IOS app: https://github.com/joshlee5/Firebased-Blog-Mobile.git
-        </p>
-
-        <h2>Star Wars Guide</h2>
-        <class="ImperialSymbol">
-            <img src="Assets/ImperialSymbol.jpeg"
-                width="300" height="300">
-        <p>
-            An IOS app for fans of Star Wars! It utilizes the Star Wars API to provide information on
-            all of the mainline Star Wars films for fans to use at their leisure! Information includes
-            release dates, cast, and plot synopses.
-
-            Github Link: https://github.com/joshlee5/Star-Wars-API-App.git
-        </p>
     </div>
+
+    
+
 </body>

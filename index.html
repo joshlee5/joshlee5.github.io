@@ -5,35 +5,140 @@
 	<meta charset="UTF-8">
     <meta name="viewport">
 	<link href="style.css" rel="stylesheet"/>
-	<title>Home</title>
+	<title>Joshua Lee</title>
 </head>
 
 <body>
-	<div id="bannerimage"></div>
+	<header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Joshua Lee</a>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="assets/Joshua_M_Lee_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
 
-	<nav class="navbar" >
+	<main>
+        <section class="hero">
+            <div class="hero-text">
+                <p class="eyebrow">Software Engineer · AI/ML · Full-Stack</p>
+                <h1>Joshua Lee</h1>
+                <p class="tagline">
+                    Computer Science graduate and AI master's student building machine learning,
+                    web, and mobile applications.
+                </p>
+                <p class="intro">
+                    I recently completed degrees in Computer Science and Mathematics at Santa Clara University
+                    and I am currently pursuing a Master's in Artificial Intelligence. I enjoy creating practical
+                    software that combines strong engineering foundations with real-world usability.
+                </p>
+                <div class="hero-actions">
+                    <a href="projects.html" class="btn primary">View Projects</a>
+                    <a href="contact.html" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="Assets/SuitPhoto.jpeg" alt="Portrait of Joshua Lee" width="400" height="500">
+            </div>
+        </section>
+	
+	<!-- <nav class="navbar" >
         <ul>
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Projects.html">Projects</a></li>
-            <li><a href="Contacts.html">Contacts</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contacts</a></li>
         </ul>
     </nav>
 
-	<h1>Introduction</h1>
-	<div>
+	<h1>Joshua Lee</h1>
+	<p class="tagline">Computer Science Graduate and AI Master's student building machine learning, full-stack, and mobile projects.</p>
+	<p class="intro">
+		I have recently completed my degree in Computer Science and Mathematics at Santa Clara University
+		and I am currently pursuing a Master's in Artificial Intelligence at SCU. I enjoy creating practical
+		software that combines strong engineering foundations with real-world usability.
+	</p> -->
+
+		<section class="featured-projects">
+			<div class="section-heading">
+				<p class="section-label">Portfolio</p>
+				<h2>Featured Projects</h2>
+			</div>
+
+			<div class="project-grid">
+				<article class="project-card">
+					<h3>ExpenSense AI Agent</h3>
+					<p>
+					An AI-powered agent that reviews employee expenditures automatically approves, rejects, or
+					submits them for manual review. It also outlines company policy and sends emails.
+					</p>
+					<a href="projects.html">View project</a>
+				</article>
+
+				<article class="project-card">
+					<h3>Saphire SAT Practice App</h3>
+					<p>
+					A casual testing app where students can practice for the SAT in a stress-free way! Students can
+					customize how they want to study and pick from three subjects: reading, writing, and math.
+					</p>
+					<a href="projects.html">View project</a>
+				</article>
+
+				<article class="project-card">
+					<h3>LetterBooksd</h3>
+					<p>
+					An IOS app for reviewing books similar to how Letterboxd is for reviewing movies.
+					</p>
+					<a href="projects.html">View project</a>
+				</article>
+			</div>
+		</section>
+
+		<section class="skills">
+			<div class="section-heading">
+				<p class="section-label">Skills</p>
+				<h2>Technical Background</h2>
+			</div>
+			<div class="skills-grid">
+				<div class="skill-card">
+					<h3>Languages</h3>
+					<p>Python, Java, C, C++, JavaScript, SQL, Flutter (Dart)</p>
+				</div>
+				<div class="skill-card">
+					<h3>Frameworks & Tools</h3>
+					<p>Firebase, PyTorch, scikit-learn, HTML, CSS</p>
+				</div>
+				<div class="skill-card">
+					<h3>Focus Areas</h3>
+					<p>Full-Stack Development, Web and Mobile App, Machine Learning, AI Integration</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="about-preview">
+			<div class="section-heading">
+				<p class="section-label">About</p>
+				<h2>A little about me</h2>
+			</div>
+			<p>
+				I am based in California and interested in software engineering roles involving backend systems,
+				AI/ML applications, and full-stack product development. I enjoy building projects that are both
+				technically strong and useful to real users.
+			</p>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<p>joslee701@gmail.com</p>
 		<p>
-		My name is Joshua Lee! I am a third year computer science major at Santa Clara University.
-        This is my personal website where I share my life and my skills in programming and other
-        fun stuff. 
+			<a href="https://github.com/joshlee5" target="_blank" rel="noopener noreferrer">GitHub</a> |
+			<a href="https://www.linkedin.com/in/joshua-lee-b71755252/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+			<a href="Assets/Joshua_M_Lee_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
 		</p>
-	</div>
-
-	<div class="SuitPhoto">
-		<img src="Assets/SuitPhoto.jpeg"
-			width="400" height="700">
-	</div>
-	<br>
+	</footer>
 </body>
-
 </html>
