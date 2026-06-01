@@ -348,3 +348,28 @@ p {
         padding-right: 2rem;
     }
 }
+
+.project-link {
+    display: inline-block;
+    margin-top: 0.75rem;
+    color: var(--accent);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.project-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 2rem auto;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.project-image.architecture {
+    max-width: 900px;
+}
+
+.project-image.classdiagram {
+    max-width: 700px;
+}
